@@ -1,0 +1,53 @@
+/* Full-screen center alignment */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+}
+
+/* Glassmorphism Login Card */
+.login-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--glass-border);
+}
+
+.login-card h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #fff, #b0b0b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-card p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card input {
+  margin-bottom: 20px;
+}
+
+/* Button override is handled by index.css now, no need for the broken 2vw width */
+.login-card button {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 16px;
+}

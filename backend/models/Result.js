@@ -1,0 +1,12 @@
+const mongoose = require("mongoose");
+
+const ResultSchema = new mongoose.Schema({
+    studentEmail: { type: String, required: true },
+    quizId: { type: String, required: true },
+    subject: { type: String, required: true },
+    score: { type: Number, required: true },
+    total: { type: Number, required: true },
+    submittedAt: { type: Date, default: Date.now }
+});
+
+module.exports = mongoose.model("Result", ResultSchema);
