@@ -1,0 +1,20 @@
+{
+  "name": "quiz_management-main",
+  "version": "1.0.0",
+  "description": "A professional, full-stack Quiz Management System built with MongoDB, Express.js, React, and Node.js. This application features a modern Glassmorphism UI and a robust role-based access control system for Admins, Faculty, and Students.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
+}
